@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Lowongan Kerja NF - SILOKER NF</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Times New Roman', Times, serif;
+        }
+
+        .ini-from {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+        }
+
+        #pindah {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body class="mt-5">
+    <h3 class="text-center mt-3">Sistem Informasi Lowongan Kerja NF</h3>
+    <div class="row mt-5">
+        <div class="col-12 m-auto">
+            <form class="col-xl-3 m-auto bg-light ini-from" id="from-login" action="Slide-8.html">
+                <div class="from-group">
+                    <h5 class="text-center">Login</h5>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="col-form-label-sm  m-0">Username</label>
+                    <input type="username" class="form-control form-control-sm" id="exampleInputUsername" name="exampleInputUsername" aria-describedby="emailHelp" placeholder="Username" required maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="col-form-label-sm  m-0">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword" name="exampleInputPassword" placeholder="Password" required maxlength="30">
+                </div>
+                <div style="display: flex; align-items: baseline; justify-content: space-evenly;">
+                    <button type="submit" class="btn btn-primary btn-sm mb-3 px-2" onclick="validationLogin()" >Login</button>
+                    <a href="Slide-10.html">Registrasi</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+        function validationLogin() {
+            const userName = document.getElementById('exampleInputUsername').value;
+            const password = document.getElementById('exampleInputPassword').value;
+            let stringKosong = '';
+
+            if (userName == stringKosong || password == stringKosong) {
+                alert('Form Tidak Boleh Kosong!');
+            } else {
+                alert('Login Berhasil!');
+            }
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
